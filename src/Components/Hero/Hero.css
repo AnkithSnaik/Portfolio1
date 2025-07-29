@@ -1,0 +1,120 @@
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.hero img{
+    margin-top: 35px;
+    width: 200px;
+}
+.hero h1{
+    text-align: center;
+    width: 50%;
+    font-size: 40px;
+    font-weight: 600;
+}
+.hero h1 span{
+   background: linear-gradient(270deg, #DA7C25 0.36%, #B923E1 102.06%);
+   background-clip:text;
+   -webkit-background-clip:text;
+   -webkit-text-fill-color:transparent; 
+}
+.hero p{
+    width: 50%;
+    text-align: center;
+    font-size: 17px;
+    line-height:40px ;
+}
+.hero-action{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.hero-connect{
+  padding: 15px 20px;
+  border-radius: 30px; /* less extreme than 50px */
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block; /* Makes it shrink to content */
+  transition: 0.5s;
+}
+.hero-connect:hover{
+    border: 2px solid white;
+}
+.hero-resume{
+  padding: 13px 35px;
+  border-radius: 30px; /* less extreme than 50px */
+  border: 2px solid white;
+  cursor: pointer;
+}
+.hero-resume:hover{
+    border: 2px solid purple;
+}
+@media screen and (max-width: 1024px) {
+  .hero h1 {
+    width: 70%;
+    font-size: 32px;
+  }
+
+  .hero p {
+    width: 70%;
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero img {
+    width: 150px;
+  }
+
+  .hero h1 {
+    width: 90%;
+    font-size: 28px;
+  }
+
+  .hero p {
+    width: 90%;
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .hero-action {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 18px;
+  }
+
+  .hero-connect,
+  .hero-resume {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .hero img {
+    width: 120px;
+  }
+
+  .hero-connect,
+  .hero-resume {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+}
