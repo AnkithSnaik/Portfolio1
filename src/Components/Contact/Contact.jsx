@@ -43,13 +43,13 @@ const Contact = () => {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <div className="contact-details">
             <div className="contact-detail">
-              <img src={mail_icon} alt='' /><p>greetstackdev@gmail.com</p>
+              <img src={mail_icon} alt='' /><p>ankith@gmail.com</p>
             </div>
             <div className="contact-detail">
               <img src={call} alt='' /><p>900-9844-28848</p>
             </div>
             <div className="contact-detail">
-              <img src={location_icon} alt='' /><p>London, California</p>
+              <img src={location_icon} alt='' /><p>Dharwad,Karnataka</p>
             </div>
           </div>
         </div>

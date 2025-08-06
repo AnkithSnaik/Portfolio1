@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import footer_logo from '../../assets/footer_logo.svg';
+import footer_logo from '../../assets/mylogo.png';
 import user_icon from '../../assets/user_icon.svg';
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer-top">
         <div className="footer-top-left">
           <img src={footer_logo} alt="footer logo" />
-          <p>I am a frontend developer from USA with 10 years of experience.</p>
+          <p>I am a frontend developer</p>
         </div>
 
         <div className="footer-top-right">
@@ -26,7 +26,7 @@ const Footer = () => {
       <hr />
 
       <div className="footer-bottom">
-        <p className='footer-bottom-left'>© 2023 Alex Bennet. All rights reserved.</p>
+        <p className='footer-bottom-left'>© 2023  Ankith Naik. All rights reserved.</p>
         <div className="footer-bottom-right">
           <p>Terms of Service</p>
           <p>Privacy Policy</p>

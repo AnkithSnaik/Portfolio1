@@ -1,45 +1,58 @@
-.navbar{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 2px 60px;   /*top || left-right */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 60px; /* Changed from margin to padding */
 }
-.nav-menu{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap:50px;
-    font-size: 15px;
+
+.nav-logo {
+  width: 120px; /* Restrict logo size */
+  height: auto;
 }
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 50px;
+  font-size: 15px;
+}
+
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.nav-menu li img {
+  display: flex;
+  margin: auto;
+}
+
 .nav-connect {
   padding: 15px 20px;
-  border-radius: 30px; /* less extreme than 50px */
+  border-radius: 30px;
   background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
   font-size: 16px;
   cursor: pointer;
-  display: inline-block; /* Makes it shrink to content */
+  display: inline-block;
   transition: 0.5s;
 }
-.nav-connect:hover{
-    transform: scale(1.05);
+
+.nav-connect:hover {
+  transform: scale(1.05);
 }
-.nav-menu li{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
+
+.anchor-link {
+  text-decoration: none;
+  color: white;
 }
-.nav-menu li img{
-    display: flex;
-    margin: auto;
-}
-.anchor-link{
-    text-decoration: none;
-    color: white;
-}
+
+/* Responsive Styles */
 @media screen and (max-width: 1024px) {
   .navbar {
-    margin: 2px 30px;
+    padding: 2px 30px;
   }
 
   .nav-menu {
@@ -51,11 +64,15 @@
     font-size: 14px;
     padding: 12px 18px;
   }
+
+  .nav-logo {
+    width: 100px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .navbar {
-    margin: 2px 20px;
+    padding: 2px 20px;
   }
 
   .nav-menu {
@@ -67,5 +84,7 @@
     padding: 10px 16px;
   }
 
-  /* Optional: Add a mobile menu toggle icon here if you're building a hamburger menu */
+  .nav-logo {
+    width: 90px;
+  }
 }
